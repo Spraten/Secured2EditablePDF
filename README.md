@@ -3,7 +3,7 @@ The "Unlock and Convert" project is a Python script designed to streamline the p
 Certainly! Here's an updated version of the README file with the additional sections you requested:
 
 # Unlock and Convert Script
-https://github.com/Spraten/Secured2EditablePDF/blob/main/Start%20of%20script.png
+![Alt Text](https://github.com/Spraten/Secured2EditablePDF/blob/main/Start%20of%20script.png)
 
 ## Prerequisites
 - Python (version X.X.X)
