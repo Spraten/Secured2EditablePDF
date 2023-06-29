@@ -33,7 +33,7 @@ Certainly! Here's an updated version of the README file with the additional sect
      ```
 
 4. **Download the script:**
-   - Download the script file `unlock_and_convert.py` to your desired location on your local system.
+   - Download the script file `Secured2EditablePDF.py` to your desired location on your local system.
 
 5. **Navigate to the script directory:**
    - **PowerShell (PS):** Use the `cd` command to navigate to the directory where the script is located. For example:
@@ -49,15 +49,15 @@ Certainly! Here's an updated version of the README file with the additional sect
 6. **Run the script:**
    - **PowerShell (PS):** Execute the script using the following command:
      ```powershell
-     python .\unlock_and_convert.py
+     python .\Secured2EditablePDF.py
      ```
 
    - **Bash:** Execute the script using the following command:
      ```bash
-     python3 ./unlock_and_convert.py
+     python3 ./Secured2EditablePDF.py
      ```
 
-Follow these steps to install the required packages and run the script `unlock_and_convert.py` successfully.
+Follow these steps to install the required packages and run the script `Secured2EditablePDF.py` successfully.
 
 ## Features
 - Unlock locked PDFs and create decrypted versions.
