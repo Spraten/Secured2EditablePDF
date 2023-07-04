@@ -100,6 +100,14 @@ def process_docx_files(dir_path, find_text, replace_text):
             print(f"{e}")
 
 def main():
+    # Menu for the user to choose actions
+    print(Fore.GREEN + "Please choose an action: ")
+    print("1. Decrypt/unlock + FindReplace + Export to text")
+    print("2. Decrypt/Unlock")
+    print("3. FindReplace")
+    print("4. Export to text")
+    choice = int(input("Enter choice: "))
+
     dir_path = input(Fore.GREEN + "Please enter the absolute path of the PDFs (leave blank for current directory): ")
     if not dir_path:
         dir_path = '.'
@@ -119,22 +127,27 @@ def main():
         with open('password.txt', 'r') as f:
             password = f.read().strip()
 
-    try:
-        process_pdf_files(dir_path, password)
-    except Exception as e:
-        print(Fore.RED + f"An unexpected error occurred while processing PDF files: {e}")
-        traceback.print_exc()
-        return
-
     find_text = input(Fore.GREEN + "Please enter the text to find (default: (Licensed To:).*") or r"(Licensed To:).*?"
     replace_text = input(Fore.GREEN + "Please enter the text to replace it with (default: ===Wow Something used to be here===): ") or "===Wow Something used to be here==="
 
     try:
-        process_docx_files(os.path.join(dir_path, 'decrypted'), find_text, replace_text)
+        if choice == 1:
+            process_pdf_files(dir_path, password)
+            process_docx_files(os.path.join(dir_path, 'decrypted'), find_text, replace_text)
+        elif choice == 2:
+            process_pdf_files(dir_path, password)
+        elif choice == 3:
+            process_docx_files(os.path.join(dir_path, 'decrypted'), find_text, replace_text)
+        elif choice == 4:
+            # Here you can call your method to export to text
+            pass
+        else:
+            print(Fore.RED + "Invalid choice.")
     except Exception as e:
-        print(Fore.RED + f"An unexpected error occurred while processing DOCX files: {e}")
+        print(Fore.RED + f"An unexpected error occurred: {e}")
         traceback.print_exc()
         return
 
 if __name__ == "__main__":
     main()
+
