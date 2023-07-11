@@ -23,8 +23,9 @@ The "Secured2EditablePDF" project is an advanced Python script designed to unloc
 
 3. **Run the script:**
    - In the terminal or command prompt, navigate to the directory where the script is located.
-   ![image](https://github.com/Spraten/Secured2EditablePDF/assets/92181911/e47380dc-24bf-437e-9174-840edefa7885)
-   JSON should look similar to this or download the provided json, and adjust to your needs 
+     ![image](https://github.com/Spraten/Secured2EditablePDF/assets/92181911/e47380dc-24bf-437e-9174-840edefa7885)
+
+   - JSON should look similar to this or download the provided json, and adjust to your needs 
    ![image](https://github.com/Spraten/Secured2EditablePDF/assets/92181911/9801b467-c75d-4352-8cbe-9ca64ab4da5e)
 
    - Run the following command to execute the script:
@@ -32,7 +33,7 @@ The "Secured2EditablePDF" project is an advanced Python script designed to unloc
      python Secured2EditablePDF.py
      ```
 
-4. **Follow the on-screen prompts:** 
+5. **Follow the on-screen prompts:** 
    - The script will guide you through the process of unlocking, converting, and modifying PDF files.
 
 ## Features
