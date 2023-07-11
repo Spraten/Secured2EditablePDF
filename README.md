@@ -1,4 +1,3 @@
-Based on the updated script, it seems the functionalities of the script have expanded beyond just unlocking and converting PDFs to DOCX. Here's the updated README.md:
 
 # Secured2EditablePDF
 
