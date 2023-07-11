@@ -1,0 +1,12 @@
+os
+shutil
+subprocess
+sys
+re
+traceback
+json
+pdfplumber==0.5.28
+PyPDF2==1.26.0
+pdf2docx==0.5.1
+python-docx==0.8.11
+colorama==0.4.4
