@@ -6,10 +6,12 @@ import re
 import traceback
 import json
 import pdfplumber
+import pdfkit
 from PyPDF2 import PdfReader, PdfWriter
 from pdf2docx import Converter
 from docx import Document
 from colorama import Fore, init
+from docx2pdf import convert
 
 def move_files(src_dir):
     text_files_dir = os.path.join(src_dir, 'Text files')
@@ -43,6 +45,21 @@ def move_files(src_dir):
                 new_file_path = os.path.join(pdf_files_dir, new_file_name)
                 shutil.move(file_path, new_file_path)
 
+def convert_docx_to_pdf(dir_path):
+    docx_files = [f for f in os.listdir(dir_path) if f.endswith('.docx')]
+    
+    for docx_file in docx_files:
+        docx_path = os.path.join(dir_path, docx_file)
+
+        # Create a new path for the 'Stripped PDFs' folder
+        stripped_dir = os.path.join(dir_path, 'Stripped PDFs')
+        if not os.path.exists(stripped_dir):
+            os.makedirs(stripped_dir)
+
+        # Now create the full pdf_path with the new directory
+        pdf_path = os.path.join(stripped_dir, docx_file[:-5] + '.pdf')
+
+        convert(docx_path, pdf_path)  # convert the docx file to pdf
 
 def install_and_import(package):
     try:
@@ -214,3 +231,4 @@ def main():
 if __name__ == "__main__":
     main()
     move_files('decrypted')
+    convert_docx_to_pdf('decrypted/Word files')
