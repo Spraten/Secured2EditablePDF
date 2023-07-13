@@ -1,14 +1,8 @@
 [
     {"find_text": "old text", "replace_text": "new text"},
     {"find_text": "", "replace_text": ""},
-    {"find_text": "Licensed To:.*", "replace_text": "======START OF A NEW PAGE======"},
-    {"find_text": "\\s.*@.*_col", "replace_text": "Joe_doe@emal.com"},
-    {"find_text": "\\w{18,}", "replace_text": "A REALLY Long String Used to be here"},
-    {"find_text": ".*@.*com", "replace_text": "john_doe@email"},
-    {"find_text": "\\d{8}", "replace_text": "12345678"},
-    {"find_text": "FirstName", "replace_text": "John"},
-    {"find_text": "LastName", "replace_text": "Doe"},
-    {"find_text": "Miss_spelled_name_common_in_txt", "replace_text": "Doe_misspelled"},
-    {"find_text": "<.*@.*>", "replace_text": "<john_doe@email>"}
+    {"find_text": "Licensed To: ***.FULL STRING HERE.***", "replace_text": "=====Page_Break====="}
+    {"find_text": "<.*@.*>", "replace_text": "<email>"}
+    
 
 ]
