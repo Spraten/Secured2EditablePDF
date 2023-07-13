@@ -1,8 +1,9 @@
 [
     {"find_text": "old text", "replace_text": "new text"},
     {"find_text": "", "replace_text": ""},
+    {"find_text": "Licensed To:.*<", "replace_text": "=====1Page_Break=====", "flags": "s"},
+    {"find_text": ".*Licensed To:.*", "replace_text": "=====Page_Break=====", "flags": "s"},
+    {"find_text": "<.*@.*>", "replace_text": "<email>"},
     {"find_text": "Licensed To: ***.FULL STRING HERE.***", "replace_text": "=====Page_Break====="}
-    {"find_text": "<.*@.*>", "replace_text": "<email>"}
-    
 
 ]
