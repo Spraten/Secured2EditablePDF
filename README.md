@@ -1,6 +1,3 @@
-# Special Note 
-because I changed the program that that converts the PDF to a DOCX you will need to edit the **find_replace.json** with the full string you'd like to replace e.g. **Licensed To: joe doe <joe_doe@email_com> month day, year" **
-sorry for the inconvince, ill try to figure out a better solution
 # Secured2EditablePDF
 
 The "Secured2EditablePDF" project is an advanced Python script designed to unlock password-protected PDF files, perform find-replace operations, convert them into editable DOCX and plain text files, and finally organize the output into separate directories. 
